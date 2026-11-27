@@ -1,16 +1,22 @@
 Category: Verdict	
+
 Findings
 
 Naming conventions:	Needs work	
+
+
 n, a, g are cryptic. Use name, age, grade. add and display are vague. addStudent and displayStudents say what they do.
 
 Code formatting: Needs work	
+
 Everything lives in one class with static state. There are no blank lines between methods, and students has no access modifier (it should be private). add mixes storing data with printing output.
 
 Logical errors:	Fails	
+
 only the name is stored, so age and grade are lost. "Student Added!" prints even for obviously invalid data. Duplicate students ("John" twice) are accepted. display() shows names only, not full records.
 
 Input validation: Fails	
+
 add("", -5, 150) is accepted: an empty name, a negative age and a grade over 100. There is also no null check and no handling of NaN grades.
 
 Exception handling:	Fails	
