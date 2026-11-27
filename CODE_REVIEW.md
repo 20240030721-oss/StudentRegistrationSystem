@@ -1,4 +1,4 @@
-Category: Verdict
+Category: Verdict<br>
 Findings
 
 Naming conventions:	Needs work<br>
